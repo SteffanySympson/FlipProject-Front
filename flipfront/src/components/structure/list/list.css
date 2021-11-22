@@ -1,0 +1,65 @@
+.tudo{
+    background-color: #fff;
+    border: 20px solid #000000;
+    border-radius: 15px;
+    width: 40%;
+    min-height: 20rem;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.div-ok{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    border-top: 2px solid #ccc;
+    align-items: center;
+    width: 100%;
+}
+
+.div-ok-check{
+    padding-top: 2px;
+    display: flex;
+    text-align: center;
+    width: 5%;
+}
+
+h1{
+    padding: 1px;
+    font-size: 28px;
+    text-shadow: rgb(800, 800, 58);
+    color: rgb(170, 0, 0);
+    font-weight: bolder;
+}
+
+.div-ok-int{
+    width:50%;
+}
+
+.div-ok a{
+    color: #000;
+    text-decoration: none;  
+    text-align: center;
+}
+
+.div-ok h5
+.div-ok span{
+    display: inline-block;
+    justify-content: center;
+}
+
+.baixa{
+    background-color: #3dbd02;
+}
+
+.media{
+    background-color: #ffee00;
+}
+
+.alta{
+    background-color: #f00;
+}

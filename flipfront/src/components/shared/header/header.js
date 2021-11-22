@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import LogoTopo from '../../../assets/logo512.png';
 import './header.css';
