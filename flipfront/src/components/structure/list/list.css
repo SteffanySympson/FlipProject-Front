@@ -29,10 +29,10 @@
 }
 
 h1{
-    padding: 1px;
+    padding: 2px;
     font-size: 28px;
-    text-shadow: rgb(800, 800, 58);
-    color: rgb(170, 0, 0);
+    text-shadow: #000000;
+    color: #aa7400;
     font-weight: bolder;
 }
 
@@ -52,14 +52,22 @@ h1{
     justify-content: center;
 }
 
-.baixa{
-    background-color: #3dbd02;
+.paginationbtn{
+    background: #ffaf06;
+    color: #000000;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 4px;
+    font-weight: bold;
+    font-size:smaller;
+    width: 2rem;
+    box-shadow: rgb(66, 66, 66);
+    transition: ease-in-out 0.3s;
 }
 
-.media{
-    background-color: #ffee00;
+.paginationbtn:hover{
+    background-color: #535353;
+    
 }
 
-.alta{
-    background-color: #f00;
-}
+

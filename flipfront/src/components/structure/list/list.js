@@ -2,9 +2,20 @@ import React, { useState, useEffect } from 'react';
 import Card from '../card/Card';
 import Api from '../../../api/api';
 import '../list/List.css';
+import PaginationComponent from '../../PaginationComponent';
+import PaginationSelector from '../../PaginatorSelector';
 
 const List = () => {
     const [anuncios, setAnuncios] = useState([]);
+    
+    const [anunciosPerPage, setAnunciosPerPage] = useState(10);
+    const [currentPage, setCurrentPage] = useState(0);
+
+    const pages = Math.ceil(anuncios.length / anunciosPerPage);
+    const startIndex = currentPage * anunciosPerPage;
+    const endIndex = startIndex + anunciosPerPage;
+    const currentAnuncios = anuncios.slice(startIndex, endIndex);
+
 
     useEffect(() => {
         getAnuncios();
@@ -19,9 +30,13 @@ const List = () => {
     return(
         <>
             <div class='tudo center'>
+                
             <h1>Nossa Lista de Anúncios</h1>
+
+            <PaginationSelector anunciosPerPage={anunciosPerPage} setAnunciosPerPage={setAnunciosPerPage} />
+            
                 {
-                    anuncios.map((anuncios, index) => (
+                    currentAnuncios.map((anuncios, index) => (
                         <div className='div-ok'>
                             <div className='div-ok-int'>
                                 <Card data = {anuncios} key={index} />
@@ -29,6 +44,9 @@ const List = () => {
                         </div>
                     ))
                 }
+
+                <PaginationComponent pages={pages} setCurrentPage={setCurrentPage} />
+
             </div>
         </>
     )
