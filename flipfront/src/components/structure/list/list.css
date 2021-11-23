@@ -1,6 +1,6 @@
 .tudo{
     background-color: #fff;
-    border: 20px solid #000000;
+    border: 8px double #000000;
     border-radius: 15px;
     width: 40%;
     min-height: 20rem;
@@ -14,25 +14,21 @@
 .div-ok{
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
-    border-top: 2px solid #ccc;
+    border-top: 1.5px dotted rgb(179, 177, 177);
     align-items: center;
     width: 100%;
 }
 
-.div-ok-check{
-    padding-top: 2px;
-    display: flex;
-    text-align: center;
-    width: 5%;
-}
 
 h1{
     padding: 2px;
-    font-size: 28px;
-    text-shadow: #000000;
-    color: #aa7400;
+    margin: 10px;
+    font-size: 32px;
+    text-shadow: 0 0 0.2em rgb(255, 219, 119), 0 0 0.2em rgb(255, 219, 119);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
     font-weight: bolder;
 }
 
@@ -56,7 +52,7 @@ h1{
     background: #ffaf06;
     color: #000000;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px dotted #ccc;
     margin: 4px;
     font-weight: bold;
     font-size:smaller;
@@ -70,4 +66,13 @@ h1{
     
 }
 
-
+.selector{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 4px;
+    width: 4rem;
+    background: #f8d68b;
+    padding: 4px;
+    margin: 10px 10px 10px 10px;
+    font-weight: bold;
+}

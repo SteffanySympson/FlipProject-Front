@@ -7,7 +7,6 @@ const Card = (props) => {
     return(
         <>
         
-            <Link to={`/view/${anuncio._id}`} >
                 <h5>{anuncio.condominio}</h5>
                 <p>UF: {anuncio.uf}</p>
                 <p>Cidade: {anuncio.cidade}</p>
@@ -25,7 +24,6 @@ const Card = (props) => {
                 <p>Valor Mensal do Condomínio: R$ {anuncio.preco_condominio}</p>
                 <p>Valor Mensal do IPTU: R$ {anuncio.preco_iptu_mes}</p> 
 
-            </Link>
         </>
     )
 }

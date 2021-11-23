@@ -7,16 +7,24 @@
     margin:0;
     position: sticky;
     width: 100%;
-
+    cursor: pointer;
+    
 }
 
-.tudo-header a {
+.menus {
     justify-content: center;
-    color: #fff9f9;
     padding: 0px 0 0 0;
     margin: 12px 20px 12px 20px;
     text-align: center;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+    color: #ffffff;
 }
+
+.menus:hover{
+    color: rgb(248, 191, 69)
+}
+
 .logo{
     height: 100;
     width: 300;
@@ -41,4 +49,10 @@
     outline: 0;
     max-width: 100%;
     border-color: #2c353d;
+    opacity: 1;
+}
+
+.btn-topo:hover{
+    transition: ease-in-out 0.3s;
+    opacity: 0.8;
 }

@@ -10,9 +10,9 @@ const Header = () => {
             <div className='tudo-header'>
                
                 <img className='logo' src={ LogoTopo }/>
-                <a> O que fazemos </a>
-                <a> Quem Somos </a>
-                <a> Contato </a>
+                <a className='menus'> O que fazemos </a>
+                <a className='menus'> Quem Somos </a>
+                <a className='menus'> Contato </a>
                 <button className='btn-topo'>Quero Cadastrar Meu Imóvel</button>
                 
             </div>

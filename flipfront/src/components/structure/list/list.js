@@ -31,7 +31,7 @@ const List = () => {
         <>
             <div class='tudo center'>
                 
-            <h1>Nossa Lista de Anúncios</h1>
+            <h1>Nossos Anúncios</h1>
 
             <PaginationSelector anunciosPerPage={anunciosPerPage} setAnunciosPerPage={setAnunciosPerPage} />
             
