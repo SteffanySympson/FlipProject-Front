@@ -6,7 +6,7 @@ const Card = (props) => {
         
     return(
         <>
-        
+            <div to={`/view/${anuncio._id}`} >
                 <h5>{anuncio.condominio}</h5>
                 <p>UF: {anuncio.uf}</p>
                 <p>Cidade: {anuncio.cidade}</p>
@@ -23,7 +23,8 @@ const Card = (props) => {
                 <p>Valor de Venda: R$ {anuncio.preco_venda}</p> 
                 <p>Valor Mensal do Condomínio: R$ {anuncio.preco_condominio}</p>
                 <p>Valor Mensal do IPTU: R$ {anuncio.preco_iptu_mes}</p> 
-
+                <br></br>
+            </div>
         </>
     )
 }

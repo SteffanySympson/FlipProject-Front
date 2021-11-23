@@ -29,7 +29,7 @@ const List = () => {
 
     return(
         <>
-            <div class='tudo center'>
+            <div class='tudo'>
                 
             <h1>Nossos Anúncios</h1>
 
@@ -45,7 +45,7 @@ const List = () => {
                     ))
                 }
 
-                <PaginationComponent pages={pages} setCurrentPage={setCurrentPage} />
+            <PaginationComponent pages={pages} setCurrentPage={setCurrentPage} />
 
             </div>
         </>

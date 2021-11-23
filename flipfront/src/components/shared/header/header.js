@@ -10,10 +10,10 @@ const Header = () => {
             <div className='tudo-header'>
                
                 <img className='logo' src={ LogoTopo }/>
-                <a className='menus'> O que fazemos </a>
-                <a className='menus'> Quem Somos </a>
-                <a className='menus'> Contato </a>
-                <button className='btn-topo'>Quero Cadastrar Meu Imóvel</button>
+                <a target="_blank" href="https://flipbr.com.br/"className='menus'> O que fazemos </a>
+                <a target="_blank" href="https://flipbr.com.br/company/"className='menus'> Quem Somos </a>
+                <a target="_blank" href="https://flipbr.com.br/contact/"className='menus'> Contato </a>
+                <a target="_blank" href="https://flipbr.com.br/cadastre-seu-imovel/"><button className='btn-topo'>Quero Cadastrar Meu Imóvel</button></a>
                 
             </div>
         </>

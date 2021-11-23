@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import Card from "../components/structure/card/Card";
-import '../components/structure/card/Card.css';
+import '../components/structure/list/List.css';
 
 export default function Exemplo() {
   const [quartos, setQuartos] = useState({quartos: 0});
@@ -16,37 +16,54 @@ export default function Exemplo() {
   async function handleClick(event) {
     event.preventDefault();
     const response = await axios.get(
-      `http://localhost:3000/anuncios/findbysuite/${quartos.quartos}`
+      `http://localhost:3000/anuncios/quartos/${quartos.quartos}`
     );
     setResult([...response.data]);
   }
 
   return (
     <>
-      <form>
-        <label htmlFor="quartos">Quartos</label>
-        <select
-          id="quartos"
-          value={quartos.quartos}
-          onChange={handleChange}
-          name="quartos"
-        >
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
+      <form className="quartosfilter">
+        <label htmlFor="uf">UF</label>
+          <select id="uf">
+            <option>SP</option>
+          </select>
 
-        <button onClick={handleClick}>Buscar</button>
+        <label htmlFor="cidade">Cidade</label>
+          <select id="cidade">
+            <option>São Paulo</option>
+          </select>
+
+        <label htmlFor="tipo">Tipo</label>
+          <select id="tipo">
+            <option>Apartamento</option>
+          </select>
+
+        <label htmlFor="quartos">Quartos</label>
+          <select
+            id="quartos"
+            value={quartos.quartos}
+            onChange={handleChange}
+            name="quartos"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+
+          <button className="buscarbtn" onClick={handleClick}>Buscar</button>
       </form>
 
-      {result.map((currentItem) => {
-        return (
-          <Card
-           data={{...currentItem}}
-          />
-        );
-      })}
+      <div className='tudofiltrado'>
+        {result.map((currentItem) => {
+          return (
+            <Card
+            data={{...currentItem}}
+            />
+          );
+        })}
+      </div>  
     </>
   );
 }
