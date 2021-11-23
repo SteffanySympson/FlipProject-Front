@@ -1,13 +1,16 @@
 import React from 'react';
 import List from '../../structure/list/List';
-import './Home.css';
+import { Link } from 'react-router-dom';
+import '../../structure/list/List.css';
+
 
 const Home = () => {
     return (
         <>
             <div className=''>
-                
-                <List />
+            
+              <Link to="/FiltroQuarto"><button className='filterbtn'>Filtrar Preferências</button></Link>
+              <List />
             </div>
         </>
     )

@@ -91,6 +91,7 @@ h1{
     width: 6rem;
     box-shadow: rgb(66, 66, 66);
     transition: ease-in-out 0.3s;
+    text-decoration: none;
 }
 
 .buscarbtn:hover{
@@ -142,4 +143,22 @@ h1{
     align-items: left;
     line-height: 0.5rem;
     text-decoration: none;
+}
+
+.filterbtn{
+    background: #ffaf06;
+    color: #000000;
+    border-radius: 5px;
+    border: 5px rgb(255, 255, 255);
+    margin: 4px;
+    font-weight: bold;
+    font-size:medium;
+    width: 10rem;
+    box-shadow: rgb(66, 66, 66);
+    transition: ease-in-out 0.3s;
+    
+}
+
+.filterbtn:hover{
+    background-color: #535353;
 }
