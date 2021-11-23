@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import Card from "../components/structure/card/Card";
 import '../components/structure/list/List.css';
+import { Link } from 'react-router-dom';
 
 export default function Exemplo() {
   const [quartos, setQuartos] = useState({quartos: 0});
@@ -53,9 +54,11 @@ export default function Exemplo() {
           </select>
 
           <button className="buscarbtn" onClick={handleClick}>Buscar</button>
+          <Link to="/"><button className="buscarbtn">Voltar</button></Link>
       </form>
 
       <div className='tudofiltrado'>
+        <h1> Resultados da Sua Busca</h1>
         {result.map((currentItem) => {
           return (
             <Card
